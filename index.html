@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabzlearn - Form Validation</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body>
+    <!-- <h1 id="title">Sabzlearn Login Form</h1> -->
+
+    <form class="login-form">
+      <header class="form-header">
+        <img src="./public/images/logo.png" class="w-14" alt="sabzlearn" />
+        <span class="font-YekanBakh-Boldt">Sabzlearn</span>
+      </header>
+      <main class="w-full space-y-3">
+        <div class="input-card">
+          <input
+            type="text"
+            placeholder="Username..."
+            class="input"
+            autocomplete="off"
+          />
+          <p class="username-message success hidden">Username is valid</p>
+        </div>
+        <div class="input-card">
+          <input type="password" placeholder="Password..." class="input" />
+          <p class="password-message unsuccess hidden">Username is not valid</p>
+        </div>
+      </main>
+      <footer class="w-full space-y-5">
+        <button class="login-button">Login</button>
+
+        <div class="continue-with"></div>
+
+        <button class="google-button">
+          <img src="./public/images/google.png" class="w-6" alt="google" />
+          <span>Login with Google</span>
+        </button>
+      </footer>
+    </form>
+
+    <div class="modal-screen hidden">
+      <div class="modal-card">
+        <!-- success.png, failed.png -->
+        <img src="./public/images/success.png" class="w-12" alt="Logo" />
+        <p>The operation was successful</p>
+
+        <button class="modal-button">Confirm</button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
